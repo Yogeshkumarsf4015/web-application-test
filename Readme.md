@@ -39,4 +39,4 @@ assets = { directory = "./dist" }
 In the Cloudflare dashboard:
 - **Build command**: `npm run build`
 - **Deploy command**: `npx wrangler deploy` (default for Workers Builds)
-
+ 
