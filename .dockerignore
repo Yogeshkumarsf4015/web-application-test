@@ -1,0 +1,10 @@
+**/.git
+**/.github
+**/.vs
+**/bin
+**/obj
+**/.wrangler
+**/node_modules
+**/dist
+.DS_Store
+*.log
