@@ -5,3 +5,9 @@ dist/
 .env.local
 .DS_Store
 *.log
+
+# .NET artifacts
+bin/
+obj/
+*.user
+*.suo
