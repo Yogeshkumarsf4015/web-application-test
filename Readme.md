@@ -30,3 +30,7 @@ docker run -p 8080:8080 web-application-test:latest
   - **Option A (Cloudflare Tunnel - Recommended for Zero Public IP / Hybrid Cloud)**: Run your Docker container anywhere (Azure, AWS, GCP, or on-prem) and run `cloudflared` (Cloudflare Tunnel) alongside it. Cloudflare routes global edge traffic directly to your container securely without exposing firewall ports.
   - **Option B (Cloudflare CDN / Proxy)**: Host your container on Azure Container Apps / App Service / Kubernetes and set Cloudflare as your reverse proxy / DNS with Orange Cloud (`Proxied`) enabled for edge caching, DDoS protection, and WAF.
   - **Option C (GitHub Actions CI/CD to GitHub Container Registry / Docker Hub / ACR)**: Build and publish the Docker container automatically when PRs merge into `main`.
+In the Cloudflare dashboard:
+- **Build command**: `npm run build`
+- **Deploy command**: `npx wrangler deploy` (default for Workers Builds)
+ 
